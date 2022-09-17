@@ -4,8 +4,21 @@ import { Grid } from "@material-ui/core";
 import Product from "./Product/Product";
 
 const products = [
-  { id: 1, name: "Shoes", description: "Running shoes.", price: "$5" },
-  { id: 2, name: "Macbook", description: "Apple macbook.", price: "$10" },
+  {
+    id: 1,
+    name: "Shoes",
+    description: "Running shoes.",
+    price: "$255",
+    image:
+      "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/328c107b-0189-4707-8c80-fdd7b34af8ae/zoomx-vaporfly-next-2-road-racing-shoes-VkbrS0.png",
+  },
+  {
+    id: 2,
+    name: "Macbook",
+    description: "Apple macbook.",
+    price: "$1800",
+    image: "https://m.media-amazon.com/images/I/61L5QgPvgqL._AC_SL1500_.jpg",
+  },
 ];
 const Products = () => {
   return (
