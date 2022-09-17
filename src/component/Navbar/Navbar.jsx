@@ -10,8 +10,10 @@ import {
 } from "@material-ui/core";
 import { ShoppingCart } from "@material-ui/icons";
 import logo from "../../assets/logo.png";
+import useStyles from "./styles";
 
 const Navbar = () => {
+  const classes = useStyles();
   return (
     <div>
       <AppBar position="fixed" className={classes.appBar} color="inherit">
@@ -23,7 +25,7 @@ const Navbar = () => {
               height="25px"
               className={classes.image}
             />
-            commerce.js
+            FloorMart
           </Typography>
           <div className={classes.grow} />
           <div className={classes.button}>
