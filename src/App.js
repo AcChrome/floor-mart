@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { commerce } from "./lib/commerce";
 import { Products, Navbar } from "./component";
 
@@ -14,10 +14,12 @@ const App = () => {
   useEffect(() => {
     fetchProducts();
   }, []);
+
+  console.log(products);
   return (
     <div>
       <Navbar />
-      <Products />
+      <Products products={products} />
     </div>
   );
 };
