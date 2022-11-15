@@ -27,7 +27,18 @@ const Cartitem = ({ item }) => {
         </Typography>
       </CardContent>
       <CardActions className={classes.cardActions}>
-        <div className={classes.buttons}></div>
+        <div className={classes.buttons}>
+          <Button type="button" size="small">
+            -
+          </Button>
+          <typography>{item.quantity}</typography>
+          <Button type="button" size="small">
+            +
+          </Button>
+        </div>
+        <Button variant="containted" type="button" color="secondary">
+          Remove
+        </Button>
       </CardActions>
     </Card>
   );
