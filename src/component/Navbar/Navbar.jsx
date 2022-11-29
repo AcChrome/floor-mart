@@ -11,15 +11,23 @@ import {
 import { ShoppingCart } from "@material-ui/icons";
 import logo from "../../assets/logo.png";
 import useStyles from "./styles";
-import { link } from "react-router-dom";
+import { link, useLocation } from "react-router-dom";
 
 const Navbar = ({ totalItems }) => {
   const classes = useStyles();
+  const location = useLocation();
+
   return (
     <div>
       <AppBar position="fixed" className={classes.appBar} color="inherit">
         <Toolbar>
-          <Typography variant="h6" className={classes.title} color="inherit">
+          <Typography
+            component={Link}
+            to="/"
+            variant="h6"
+            className={classes.title}
+            color="inherit"
+          >
             <img
               src={logo}
               alt="Commerce.js"
